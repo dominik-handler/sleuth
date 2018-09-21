@@ -228,7 +228,7 @@ sleuth_prep <- function(
   if ("transform_fun_tpm" %in% names(extra_opts)) {
     transform_fun_tpm <- extra_opts$transform_fun_tpm
   } else {
-    transform_fun_tpm <- identity
+    transform_fun_tpm <- log_transform
   }
   if ("gene_mode" %in% names(extra_opts)) {
     gene_mode <- extra_opts$gene_mode
