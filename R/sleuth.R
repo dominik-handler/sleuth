@@ -38,7 +38,7 @@ basic_filter <- function(row, min_reads = 5, min_prop = 0.47) {
 #' @return log(x + offset)
 #' @export
 log_transform <- function(x, offset=0.5) {
-  log(x + offset)
+  log2(x + offset)
 }
 
 # currently defunct
